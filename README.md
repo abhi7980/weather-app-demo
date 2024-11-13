@@ -6,6 +6,8 @@
 VITE_OPENWEATHER_API_KEY=
 ```
 
+To install the project : clone the repo the in the root folder run "npm i" then "npm run dev"
+
 
 * This project shows 5 cities on the dashboard initially.
 
