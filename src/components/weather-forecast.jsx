@@ -36,13 +36,13 @@ export function WeatherForecast({ data }) {
           {nextDays.map((day) => (
             <div
               key={day.date}
-              className="grid grid-cols-3 items-center gap-4 rounded-lg border p-4"
+              className="grid grid-cols-2 sm:grid-cols-3 items-center gap-4 rounded-lg border p-4"
             >
               <div>
-                <p className="font-medium">
+                <p className="font-sm">
                   {format(new Date(day.date * 1000), "EEE, MMM d")}
                 </p>
-                <p className="text-sm text-muted-foreground capitalize">
+                <p className="text-xs text-muted-foreground capitalize">
                   {day.weather.description}
                 </p>
               </div>
@@ -58,7 +58,7 @@ export function WeatherForecast({ data }) {
                 </span>
               </div>
 
-              <div className="flex justify-end gap-4">
+              <div className="hidden lg:flex justify-end gap-4">
                 <span className="flex items-center gap-1">
                   <Droplets className="h-4 w-4 text-blue-500" />
                   <span className="text-sm">{day.humidity}%</span>
